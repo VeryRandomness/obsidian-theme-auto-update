@@ -1,0 +1,9 @@
+{
+	"id": "theme-auto-update",
+	"name": "Theme Auto-Update",
+	"version": "2.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "Checks GitHub repos for newer versions of your themes on startup and installs them. Add your own theme links in settings.",
+	"author": "VeryRandomness",
+	"isDesktopOnly": false
+}
