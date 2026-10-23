@@ -43,7 +43,15 @@ module.exports = class ThemeAutoUpdate extends Plugin {
 			if (manual) new Notice("Theme Auto-Update: no themes in the list.");
 			return;
 		}
-		for (const t of active) await this.check(t, manual);
+		// One theme failing (offline, bad repo) must not stop the others. check() has already
+		// logged the error, and shown it when this is a manual check.
+		for (const t of active) {
+			try {
+				await this.check(t, manual);
+			} catch {
+				/* reported by check() */
+			}
+		}
 	}
 
 	async defaultBranch(repo) {
