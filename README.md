@@ -1,5 +1,7 @@
 # Theme Auto-Update
 
+> **This plugin is now part of [Vault Management](https://github.com/VeryRandomness/obsidian-vault-management)**, which combines bullet variants, color swatches, bulk property editing and theme updates in one plugin. This repo is archived and no longer updated.
+
 An [Obsidian](https://obsidian.md) plugin that installs themes from GitHub and keeps them up to date. Add a theme's repo once; from then on it is checked every time Obsidian starts, and a newer `theme.css` is installed automatically.
 
 ## What it does
