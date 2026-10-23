@@ -1,0 +1,1 @@
+# obsidian-theme-auto-update
